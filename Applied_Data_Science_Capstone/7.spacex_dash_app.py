@@ -72,7 +72,7 @@ def get_pie_chart(entered_site):
     else:
         specific_site_df = filtered_df[filtered_df['Launch Site'] == entered_site]
         success_count = specific_site_df['class'].value_counts()
-        print(success_count)
+        #print(success_count)
         fig = px.pie(
             success_count, 
             values=success_count.values,
